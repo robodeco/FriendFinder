@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <style>
+      #nameWrap {
+        width: 50%;
+      }
+  </style>
+</head>
+<body>
+
+<!-- javascript functions begin on line 248, everything inbetween is the bootstrap for the questions. -->
+<!-- all psuedocoding for this project can be found at the bottom as well-->
+<!-- ========================================================================================================== -->
+
+<h1> SURVEY QUESTIONS</h1>
+
+<form id="surveyQues" method="POST" action="api/user">
+  <div id="nameWrap">
+      <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default">Your Name (required)</span>
+      </div>
+      <input id="nameInput" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+    </div>
+  </div>
+
+  <div id="photoWrap">
+      <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default">Profile Photo Link</span>
+      </div>
+      <input id="photoLink" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+    </div>
+  </div>
+
+  <!-- ======================= -->
+
+  <div id="formWrap">
+    <div>
+      <h2>Question 1</h2>
+      <p> your mind is always buzzing with unexplored ideas. </p>
+
+      <div class="input-group mb-3 col-sm-5">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Options</label>
+        </div>
+          <select class="custom-select" id="question1">
+            <option selected>Choose...</option>
+            <option value="1">1(strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(strongly agree)</option>
+          </select>
+      </div>
+    </div>
+      <!-- ======================= -->
+  <div>
+      <h2>Question 2</h2>
+      <p> you rely more on your experience than you do your imagination. </p>
+
+      <div class="input-group mb-3 col-sm-5">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Options</label>
+        </div>
+          <select class="custom-select" id="question2">
+            <option selected>Choose...</option>
+            <option value="1">1(strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(strongly agree)</option>
+          </select>
+      </div>
+  </div>
+      <!-- ======================= -->
+  <div>
+      <h2>Question 3</h2>
+      <p> you find it easy to stay relaxed and focused even when there is some pressure. </p>
+
+      <div class="input-group mb-3 col-sm-5">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Options</label>
+        </div>
+          <select class="custom-select" id="question3">
+            <option selected>Choose...</option>
+            <option value="1">1(strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(strongly agree)</option>
+          </select>
+      </div>
+  </div>
+      <!-- ======================= -->
+  <div>
+      <h2>Question 4</h2>
+      <p> you rarely do something just out of sheer curiosity. </p>
+
+      <div class="input-group mb-3 col-sm-5">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Options</label>
+        </div>
+          <select class="custom-select" id="question4">
+            <option selected>Choose...</option>
+            <option value="1">1(strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(strongly agree)</option>
+          </select>
+      </div>
+  </div>
+      <!-- ======================= -->
+  <div>
+      <h2>Question 5</h2>
+      <p> People rarely upset you. </p>
+
+      <div class="input-group mb-3 col-sm-5">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Options</label>
+        </div>
+          <select class="custom-select" id="question5">
+            <option selected>Choose...</option>
+            <option value="1">1(strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(strongly agree)</option>
+          </select>
+      </div>
+    </div>
+      <!-- ======================= -->
+  <div>
+      <h2>Question 6</h2>
+      <p> It is often difficult for you to relate to other people’s feelings. </p>
+
+      <div class="input-group mb-3 col-sm-5">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Options</label>
+        </div>
+          <select class="custom-select" id="question6">
+            <option selected>Choose...</option>
+            <option value="1">1(strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(strongly agree)</option>
+          </select>
+      </div>
+  </div>
+      <!-- ======================= -->
+  <div>
+      <h2>Question 7</h2>
+      <p> In a discussion, truth should be more important than people’s sensitivities. </p>
+
+      <div class="input-group mb-3 col-sm-5">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Options</label>
+        </div>
+          <select class="custom-select" id="question7">
+            <option selected>Choose...</option>
+            <option value="1">1(strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(strongly agree)</option>
+          </select>
+      </div>
+  </div>
+      <!-- ======================= -->
+  <div>
+      <h2>Question 8</h2>
+      <p> You rarely get carried away by fantasies and ideas.</p>
+
+      <div class="input-group mb-3 col-sm-5">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Options</label>
+        </div>
+          <select class="custom-select" id="question8">
+            <option selected>Choose...</option>
+            <option value="1">1(strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(strongly agree)</option>
+          </select>
+      </div>
+  </div>
+      <!-- ======================= -->
+  <div>
+      <h2>Question 9</h2>
+      <p> You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</p>
+
+      <div class="input-group mb-3 col-sm-5">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Options</label>
+        </div>
+          <select class="custom-select" id="question9">
+            <option selected>Choose...</option>
+            <option value="1">1(strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(strongly agree)</option>
+          </select>
+      </div>
+  </div>
+      <!-- ======================= -->
+  <div>
+      <h2>Question 10</h2>
+      <p> You feel more energetic after spending time with a group of people.</p>
+
+      <div class="input-group mb-3 col-sm-5">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Options</label>
+        </div>
+          <select class="custom-select" id="question10">
+            <option selected>Choose...</option>
+            <option value="1">1(strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(strongly agree)</option>
+          </select>
+      </div>
+  </div>
+  <!-- ======================= -->
+  <button class="btn btn-primary btn-lg btn-block submit">Submit!</button>
+</form>
+
+
+<!-- ======================= -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+// src="../data/friends.js"
+
+jQuery(".submit").on("click", function(event) {
+  event.preventDefault();
+
+  var currentURL = window.location.origin;
+
+  var surveyData = {
+    nameData: jQuery("#nameInput").val().trim(),
+    photoLink: jQuery("#photoLink").val().trim(),
+    q1: jQuery("#question1").val().trim(),
+    q2: jQuery("#question2").val().trim(),
+    q3: jQuery("#question3").val().trim(),
+    q4: jQuery("#question4").val().trim(),
+    q5: jQuery("#question5").val().trim(),
+    q6: jQuery("#question6").val().trim(),
+    q7: jQuery("#question7").val().trim(),
+    q8: jQuery("#question8").val().trim(),
+    q9: jQuery("#question9").val().trim(),
+    q10: jQuery("#question10").val().trim()
+  };
+
+  console.log(surveyData)
+
+  $.ajax("/api/user", {
+    type: "POST",
+    data: surveyData
+  }).then(function(response) {
+      console.log("post successful", response)
+  });
+
+  $.ajax("/api/friends", {
+    type: "GET",
+    url: currentURL
+  }).done(function(friendArr) {
+
+      var surveyArr = [surveyData.q1, surveyData.q2, surveyData.q3, surveyData.q4, surveyData.q5, surveyData.q6, surveyData.q7, surveyData.q8, surveyData.q9, surveyData.q10];
+      var intSurvArr = [];
+
+      var getFriData = [];
+      var intFriData = [];
+
+      var absDiff = [];
+      var matchTotal;
+
+      intSurvArr = surveyArr.map(Number);
+
+          console.log(intSurvArr + " this is intsurvarr");
+
+      getFriData = friendArr[0].scores;
+      intFriData = getFriData.map(Number);
+
+          console.log(intFriData + " this is intfridata")
+
+      for (var p = 0; p < intSurvArr.length; p++) {
+        var raw = intSurvArr[p] - intFriData[p];
+        var absolute = Math.abs(raw);
+        absDiff.push(absolute);
+      };
+          console.log(absDiff + " this is c");
+
+      function arrTotal () {
+        function getSum(total, num) {
+          return total + num;
+        };
+        matchTotal = absDiff.reduce(getSum);
+        console.log(matchTotal);
+      }
+      arrTotal();
+  });
+});
+
+//THINGS LEFT TO DO
+// 1) change the functionality so that the application can go through multiple objects in the friendArr array under friends.js; currently it is only set up to go through the first object in the arry as seen on line 296.
+//
+// 2) either A) set a threshold for all matches, where the application will return said match if the threshold is met, or B) pursue a way for the application to only return the match with the lowest matchTotal number
+//
+// 3) set up a modal that displays the match.
+
+// 4) discover why the POST command just seems to auto peform when the application is left open for a while.
+// 5) discover ways to make this application dryer. over 300 lines of code? crazy.
+
+</script>
+
+<!-- ======================= -->
+
+
+
+</body>
+</html>
